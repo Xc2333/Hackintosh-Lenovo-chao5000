@@ -1,32 +1,33 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20181031 (64-bit version)
+ * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
  * Copyright (c) 2000 - 2018 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-PNLF.aml, Fri Jan 11 14:44:50 2019
+ * Disassembly of SSDT-PNLF.aml, Wed Jan 30 12:29:33 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000468 (1128)
+ *     Length           0x00000486 (1158)
  *     Revision         0x02
- *     Checksum         0x1D
- *     OEM ID           "hack"
- *     OEM Table ID     "_PNLF"
+ *     Checksum         0xFD
+ *     OEM ID           "PNLF"
+ *     OEM Table ID     "PNLF"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20181031 (538447921)
  */
-DefinitionBlock ("", "SSDT", 2, "hack", "_PNLF", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "PNLF", "PNLF", 0x00000000)
 {
-    External (_SB_.PCI0.IGPU, DeviceObj)
-    External (RMCF.BKLT, IntObj)
-    External (RMCF.FBTP, IntObj)
-    External (RMCF.GRAN, IntObj)
-    External (RMCF.LEVW, IntObj)
-    External (RMCF.LMAX, IntObj)
+    External (_SB_.PCI0.IGPU, DeviceObj)    // (from opcode)
+    External (RMCF.BKLT, IntObj)    // (from opcode)
+    External (RMCF.FBTP, IntObj)    // (from opcode)
+    External (RMCF.GRAN, IntObj)    // (from opcode)
+    External (RMCF.LEVW, IntObj)    // (from opcode)
+    External (RMCF.LMAX, IntObj)    // (from opcode)
 
+    Debug = "Brightless control enable"
     Scope (_SB.PCI0.IGPU)
     {
         OperationRegion (RMP3, PCI_Config, Zero, 0x14)
@@ -74,7 +75,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PNLF", 0x00000000)
                 {
                     If ((Ones != \RMCF.LEVW))
                     {
-                        Local5 = \RMCF.LEVW /* External reference */
+                        Local5 = \RMCF.LEVW
                     }
                 }
 
@@ -85,7 +86,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PNLF", 0x00000000)
             {
                 If (CondRefOf (\RMCF.GRAN))
                 {
-                    ^GRAN = \RMCF.GRAN /* External reference */
+                    ^GRAN = \RMCF.GRAN
                 }
                 Else
                 {
@@ -99,7 +100,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PNLF", 0x00000000)
             Local4 = One
             If (CondRefOf (\RMCF.BKLT))
             {
-                Local4 = \RMCF.BKLT /* External reference */
+                Local4 = \RMCF.BKLT
             }
 
             If (!(One & Local4))
@@ -107,17 +108,17 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PNLF", 0x00000000)
                 Return (Zero)
             }
 
-            Local0 = ^GDID /* \_SB_.PCI0.IGPU.PNLF.GDID */
+            Local0 = ^GDID
             Local2 = Ones
             If (CondRefOf (\RMCF.LMAX))
             {
-                Local2 = \RMCF.LMAX /* External reference */
+                Local2 = \RMCF.LMAX
             }
 
             Local3 = Zero
             If (CondRefOf (\RMCF.FBTP))
             {
-                Local3 = \RMCF.FBTP /* External reference */
+                Local3 = \RMCF.FBTP
             }
 
             If (((One == Local3) || (Ones != Match (Package (0x10)
@@ -181,7 +182,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PNLF", 0x00000000)
                 }
 
                 INI1 (Local4)
-                Local1 = ^LEVX /* \_SB_.PCI0.IGPU.PNLF.LEVX */
+                Local1 = ^LEVX
                 If (!Local1)
                 {
                     Local1 = Local2
@@ -249,8 +250,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PNLF", 0x00000000)
 
                 If ((!(0x08 & Local4) && (Local2 != Local1)))
                 {
-                    Local0 = ((((^LEVX & 0xFFFF) * Local2) / Local1) | 
-                        (Local2 << 0x10))
+                    Local0 = ((((^LEVX & 0xFFFF) * Local2) / Local1) | (Local2 << 0x10))
                     ^LEVX = Local0
                 }
             }

@@ -1,32 +1,35 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20181031 (64-bit version)
+ * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
  * Copyright (c) 2000 - 2018 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-DAMD.aml, Fri Jan 11 14:44:50 2019
+ * Disassembly of SSDT-DAMD.aml, Wed Jan 30 12:29:33 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000000AC (172)
+ *     Length           0x000000E9 (233)
  *     Revision         0x02
- *     Checksum         0x53
+ *     Checksum         0xD2
  *     OEM ID           "DAMD"
  *     OEM Table ID     "DAMD"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
+ *     Compiler Version 0x20181031 (538447921)
  */
 DefinitionBlock ("", "SSDT", 2, "DAMD", "DAMD", 0x00000000)
 {
+    External (_SB_.PCI0.RP01.PXSX, DeviceObj)    // (from opcode)
+
     Method (\_SB.PCI0.RP01.PXSX._DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
     {
+        Debug = "Disable the AMD graphics device"
         If (!Arg2)
         {
             Return (Buffer (One)
             {
-                 0x03                                             // .
+                 0x03                                           
             })
         }
 
@@ -43,19 +46,19 @@ DefinitionBlock ("", "SSDT", 2, "DAMD", "DAMD", 0x00000000)
             "class-code", 
             Buffer (0x04)
             {
-                 0xFF, 0xFF, 0xFF, 0xFF                           // ....
+                 0xFF, 0xFF, 0xFF, 0xFF                         
             }, 
 
             "vendor-id", 
             Buffer (0x04)
             {
-                 0xFF, 0xFF, 0x00, 0x00                           // ....
+                 0xFF, 0xFF, 0x00, 0x00                         
             }, 
 
             "device-id", 
             Buffer (0x04)
             {
-                 0xFF, 0xFF, 0x00, 0x00                           // ....
+                 0xFF, 0xFF, 0x00, 0x00                         
             }
         })
     }
