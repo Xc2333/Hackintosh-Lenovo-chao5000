@@ -5,18 +5,18 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-BIMY.aml, Wed Jan 30 12:29:33 2019
+ * Disassembly of SSDT-BIMY.aml, Fri Feb  1 16:17:44 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000238 (568)
+ *     Length           0x0000028B (651)
  *     Revision         0x02
- *     Checksum         0xA6
+ *     Checksum         0xC8
  *     OEM ID           "BIMY"
  *     OEM Table ID     "BIMY"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20181031 (538447921)
+ *     Compiler Version 0x20180427 (538444839)
  */
 DefinitionBlock ("", "SSDT", 2, "BIMY", "BIMY", 0x00000000)
 {
@@ -55,7 +55,7 @@ DefinitionBlock ("", "SSDT", 2, "BIMY", "BIMY", 0x00000000)
                 }
 
                 PBIF [0x09] = "CHAO 5000"
-                PBIF [0x0A] = "BAT20101001"
+                PBIF [0x0A] = "L16M2PB1"
                 PBIF [0x0B] = "LiP"
                 PBIF [0x0C] = "LENOVO"
                 Release (LFCM)
@@ -64,5 +64,23 @@ DefinitionBlock ("", "SSDT", 2, "BIMY", "BIMY", 0x00000000)
 
         Return (PBIF)
     }
+
+    Name (_SB.PCI0.LPCB.EC.BAT0.PBIF, Package (0x0E)
+    {
+        Zero, 
+        0xFFFFFFFF, 
+        0xFFFFFFFF, 
+        One, 
+        0xFFFFFFFF, 
+        Zero, 
+        Zero, 
+        0x64, 
+        Zero, 
+        "LCFC", 
+        "BAT20101001", 
+        "LiP", 
+        "LENOVO", 
+        0x7B
+    })
 }
 

@@ -23,20 +23,6 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change SAT0 to SATA</string>
 					<key>Disabled</key>
 					<false/>
@@ -151,6 +137,20 @@
 					VFBEMA==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change PBIF to PBIX</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					UEJJRg==
+					</data>
+					<key>Replace</key>
+					<data>
+					UEJJWA==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>FixHeaders</key>
@@ -177,15 +177,13 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 keepsyms=1</string>
+		<string>-v dart=0 keepsyms=1</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
-		<key>DefaultVolume</key>
-		<string>MacOS</string>
 		<key>NeverDoRecovery</key>
 		<true/>
 		<key>Timeout</key>
-		<integer>0</integer>
+		<integer>5</integer>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -326,26 +324,6 @@
 				SU9LaXM=
 				</data>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit DalianSky,Ricky)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g/sPD4OPBAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.2</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g/sPkJCQkJCQ
-				</data>
-			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -368,7 +346,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02711104QXHWVP8C</string>
+		<string>C02715101GUHWVP1H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -398,9 +376,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro14,1</string>
 		<key>SerialNumber</key>
-		<string>C02TFGZTHV29</string>
+		<string>C02TK0T0HV29</string>
 		<key>SmUUID</key>
-		<string>705BF4FD-0719-488E-8784-EA81E0ECD68B</string>
+		<string>BBAC2FA6-A83F-420B-B6B4-C6703507708C</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
