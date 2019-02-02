@@ -3,6 +3,13 @@ This repo is for hackintosh on Lenovo  chao5000
 
   *****
 ####   Change Log:
+>   2/02/2019
+
+1.Add NullEthernet.kext for USB Network card.
+
+2.Add touchpad's compatibility of 7500U (Default kext folder is for 7200U) 
+
+
 >   1/30/2019
 
 1.Update Clover 4868,use full hotpatch files,modify battery info,and brightless key is working.

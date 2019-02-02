@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20180427 (538444839)
  */
-DefinitionBlock ("", "SSDT", 2, "RehabM", "RMNE", 0x00001000)
+DefinitionBlock ("", "SSDT", 2, "VNET", "VNET", 0x00001000)
 {
     Device (RMNE)
     {
