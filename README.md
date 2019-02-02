@@ -26,6 +26,7 @@ This repo is for hackintosh on Lenovo  chao5000
 *   [Dids](https://github.com/Dids) for his [clover-builder](https://github.com/Dids/clover-builder)
 *   [athlonreg ](https://github.com/athlonreg)for his fork [one-key-hidpi](https://github.com/athlonreg/one-key-hidpi)
 *   [alexandred ](https://github.com/alexandred)for his [VoodooI2C.kext ](https://github.com/alexandred/VoodooI2C)
+*   [penghubingzhou](https://github.com/penghubingzhou) for touchpad help
 *   [Xc2333](https://github.com/Xc2333) for maintaining this repo
   
   ![](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/pic/About%20this%20Mac.png)
