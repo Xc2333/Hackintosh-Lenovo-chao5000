@@ -1,8 +1,21 @@
 # Hackintosh-Lenovo-chao5000
-This repo is for hackintosh on Lenovo  chao5000
+This repo is for hackintosh on Lenovo chao5000
+(default kext folder is for 7200U)
 
   *****
 ####   Change Log:
+
+> 2/14/2019
+
+1.SSDT-TPD0.aml is full support for 7200U and 7500U,just use latest VoodooI2C.kext and satellites kext.
+
+**Note:** VoodooI2CSynaptics.kext(7200U)、VoodooI2CELAN.kext(7500U)
+
+2.Update Clover 4876,remove themes folder,just use Clover's inner themes.
+
+
+
+
 >   2/02/2019
 
 1.Add NullEthernet.kext for USB Network card.
