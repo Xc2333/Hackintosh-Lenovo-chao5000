@@ -34,7 +34,7 @@ DefinitionBlock ("", "SSDT", 2, "GPRW", "GPRW", 0x00000000)
             })
         }
 
-        Return (XPRW (Arg0, Zero))
+        Return (XPRW (Arg0, Arg1))
     }
 }
 

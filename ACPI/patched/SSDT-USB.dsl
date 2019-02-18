@@ -5,24 +5,24 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-USB.aml, Fri Feb  1 16:17:44 2019
+ * Disassembly of /Users/xc233/Documents/GitHub/Hackintosh-Lenovo-chao5000/ACPI/patched/SSDT-USB.aml, Mon Feb 18 20:17:44 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000001E4 (484)
+ *     Length           0x000001BD (445)
  *     Revision         0x02
- *     Checksum         0x55
+ *     Checksum         0x3E
  *     OEM ID           "USB"
  *     OEM Table ID     "USB"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20181031 (538447921)
+ *     Compiler Version 0x20180427 (538444839)
  */
 DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
 {
-    Debug = "Modify USB Ports with USBInjectAll.kext via this SSDT"
     Device (UIAC)
     {
+        Debug = "Modify USB Ports with USBInjectAll.kext via this SSDT"
         Name (_HID, "UIA00000")  // _HID: Hardware ID
         Name (RMCF, Package (0x02)
         {
@@ -36,7 +36,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                 }, 
 
                 "ports", 
-                Package (0x10)
+                Package (0x0E)
                 {
                     "HS01", 
                     Package (0x04)
@@ -47,6 +47,18 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         Buffer (0x04)
                         {
                              0x01, 0x00, 0x00, 0x00                         
+                        }
+                    }, 
+
+                    "HS02", 
+                    Package (0x04)
+                    {
+                        "UsbConnector", 
+                        0x09, 
+                        "port", 
+                        Buffer (0x04)
+                        {
+                             0x02, 0x00, 0x00, 0x00                         
                         }
                     }, 
 
@@ -107,30 +119,6 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         Buffer (0x04)
                         {
                              0x0F, 0x00, 0x00, 0x00                         
-                        }
-                    }, 
-
-                    "USR1", 
-                    Package (0x04)
-                    {
-                        "UsbConnector", 
-                        10, 
-                        "port", 
-                        Buffer (0x04)
-                        {
-                             0x0B, 0x00, 0x00, 0x00                         
-                        }
-                    }, 
-
-                    "USR2", 
-                    Package (0x04)
-                    {
-                        "UsbConnector", 
-                        10, 
-                        "port", 
-                        Buffer (0x04)
-                        {
-                             0x0C, 0x00, 0x00, 0x00                         
                         }
                     }
                 }
