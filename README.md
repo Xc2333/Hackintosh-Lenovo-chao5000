@@ -3,7 +3,12 @@ This repo is for hackintosh on Lenovo chao5000
 (default kext folder is for SYNA2B33,for ELAN0608 use VoodooI2CELAN.kext instead)
 
   *****
+
+###[中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[英文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
 ####   Change Log:
+> 2/18/2019
+
+1.Add Chinese README.md、correct type-c port(work in progress)、add AppleALC-Generator.sh.
 
 > 2/14/2019
 
