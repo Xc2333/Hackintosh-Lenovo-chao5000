@@ -4,7 +4,7 @@
 ⚠️：按触摸板分为SYNA2B33/ELAN0608二个版本，默认的驱动文件夹对应SYNA2B33，ELAN0608用户请使用VoodooI2CELAN.kext
 
   *****
-### [中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[英文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
+### [中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[English](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
   
 ####   更新日志:
 > 2/18/2019

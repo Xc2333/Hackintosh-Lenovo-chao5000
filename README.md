@@ -4,7 +4,7 @@ This repo is for hackintosh on Lenovo chao5000
 
   *****
 
-###[中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[英文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
+### [中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[English](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
 ####   Change Log:
 > 2/18/2019
 
