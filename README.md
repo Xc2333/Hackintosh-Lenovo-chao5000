@@ -1,15 +1,15 @@
 # Hackintosh-Lenovo-chao5000
 This repo is for hackintosh on Lenovo chao5000
-(default kext folder is for 7200U)
+(default kext folder is for SYNA2B33,for ELAN0608 use VoodooI2CELAN.kext instead)
 
   *****
 ####   Change Log:
 
 > 2/14/2019
 
-1.SSDT-TPD0.aml is full support for 7200U and 7500U,just use latest VoodooI2C.kext and satellites kext.
+1.SSDT-TPD0.aml is full support for SYNA2B33 and ELAN0608, just use latest VoodooI2C.kext and satellites kext.
 
-**Note:** VoodooI2CSynaptics.kext(7200U)、VoodooI2CELAN.kext(7500U)
+**Note:** VoodooI2CSynaptics.kext(SYNA2B33)、VoodooI2CELAN.kext(ELAN0608)
 
 2.Update Clover 4876,remove themes folder,just use Clover's inner themes.
 

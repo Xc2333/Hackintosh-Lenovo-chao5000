@@ -114,7 +114,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                     Package (0x04)
                     {
                         "UsbConnector", 
-                        0x03, 
+                        10, 
                         "port", 
                         Buffer (0x04)
                         {
@@ -126,7 +126,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                     Package (0x04)
                     {
                         "UsbConnector", 
-                        0x03, 
+                        10, 
                         "port", 
                         Buffer (0x04)
                         {
