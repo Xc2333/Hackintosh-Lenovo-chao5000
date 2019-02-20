@@ -6,6 +6,13 @@ This repo is for hackintosh on Lenovo chao5000
 
 ### [中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[English](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
 ####   Change Log:
+> 2/20/2019
+
+1.Add SSDT-PCIS.aml，let hack shows PCI info.
+
+2.Add _DSM rename patch;inject audio layout info by SSDT-PCIS.aml instead by Device-Properties;remove PlayAsync.
+
+
 > 2/18/2019
 
 1.Add Chinese README.md、correct type-c port(work in progress)、add AppleALC-Generator.sh.

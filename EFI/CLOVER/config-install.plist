@@ -171,6 +171,20 @@
 					R1BJMA==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _DSM to XDSM</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0RTTQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WERTTQ==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>FixHeaders</key>
@@ -227,7 +241,7 @@
 		<key>Language</key>
 		<string>en:0</string>
 		<key>PlayAsync</key>
-		<true/>
+		<false/>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 	</dict>

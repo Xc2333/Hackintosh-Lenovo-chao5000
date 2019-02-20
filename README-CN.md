@@ -7,6 +7,12 @@
 ### [中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[English](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
   
 ####   更新日志:
+> 2/20/2019
+
+1.新增SSDT-PCIS.aml，让关于本机-系统报告能读取PCI信息（修饰作用）
+
+2.config文件添加_DSM重命名；取消声卡的Properties注入，改用SSDT-PCIS.aml注入；config取消clover开机声音
+
 > 2/18/2019
 
 1.新增中文README.md、修正type-C端口（完善中）、添加AppleALC生成脚本，方便日后的声卡驱动升级
