@@ -204,7 +204,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 keepsyms=1</string>
+		<string>dart=0 keepsyms=1 lilucpu=8</string>
 		<key>NeverDoRecovery</key>
 		<true/>
 	</dict>
@@ -216,16 +216,16 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AAAbWQ==
+				AAAWGQ==
 				</data>
 				<key>device-id</key>
 				<data>
-				FlkAAA==
+				FhkAAA==
 				</data>
 				<key>framebuffer-con1-alldata</key>
 				<data>
-				AQUKAAAIAACHAQAAAgQKAAAACAAAhwEAAP8AAAABAAAA
-				ACAAAAA=
+				AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAg
+				AAAA
 				</data>
 				<key>framebuffer-con1-enable</key>
 				<integer>1</integer>
