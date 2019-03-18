@@ -7,6 +7,17 @@
 ### [中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[English](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
   
 ####   更新日志:
+> 3/18/2019
+
+1.更新Clover 4898，config-install添加忽略的-v啰嗦模式。
+
+2.更新关于本机图片，删除SSDT-TPD0.aml内多余的_STA方法，仅仅重命名_STA即可。
+
+3.增加NoTouchID.kext解决日常操作中密码验证窗口卡顿问题，增加SystemProfilerMemoryFixup.kext修复关于本机不显示内存条的问题（这个bug不应该涉及MacbookPro14吧？）
+
+4.增加SystemFixTools.kext，因为这些kext几乎不需要更新，合并到一个空壳中以减少kext目录的数量，内含NoTouchID.kext、NullEthernetInjector.kext、SystemProfilerMemoryFixup.kext、VoodooTSCSync.kext）
+
+
 
 > 3/6/2019
 

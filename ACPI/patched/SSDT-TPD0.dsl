@@ -25,10 +25,6 @@ DefinitionBlock ("", "SSDT", 2, "TPD", "TPD", 0x00000000)
     External (TPTY, FieldUnitObj)    // (from opcode)
 
     Debug = "Enable touchpad work with VoodooI2C.kext"
-    Method (_SB.PCI0.GPI0._STA, 0, NotSerialized)  // _STA: Status
-    {
-        Return (0x0F)
-    }
 
     Method (_SB.PCI0.I2C0.TPD0._CRS, 0, Serialized)  // _CRS: Current Resource Settings
     {
