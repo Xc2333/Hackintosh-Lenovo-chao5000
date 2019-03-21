@@ -7,6 +7,12 @@
 ### [中文](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README-CN.md)|[English](https://github.com/Xc2333/Hackintosh-Lenovo-chao5000/blob/master/README.md)
   
 ####   更新日志:
+> 3/21/2019
+
+1.优化SSDT-XOSI.aml。
+
+2.更新WhateverGreen.kext_v1.2.7,Lilu.kext_v1.3.5以及AptioMemoryFix.efi
+
 > 3/18/2019
 
 1.更新Clover 4898，config-install添加忽略的-v啰嗦模式。
@@ -17,12 +23,9 @@
 
 4.增加SystemFixTools.kext，因为这些kext几乎不需要更新，合并到一个空壳中以减少kext目录的数量，内含NoTouchID.kext、NullEthernetInjector.kext、SystemProfilerMemoryFixup.kext、VoodooTSCSync.kext）
 
-
-
 > 3/6/2019
 
 1.增加CPUFriend.kext,使Macbook Pro 14.3最低限制1300Mhz降低到600Mhz。
-
 
 > 2/25/2019
 
