@@ -1,32 +1,38 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
+ * AML/ASL+ Disassembler version 20181003 (64-bit version)
  * Copyright (c) 2000 - 2018 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of /Volumes/ESP_MAC/EFI/CLOVER/ACPI/patched/SSDT-PCIS.aml, Wed Feb 20 12:20:24 2019
+ * Disassembly of /Users/Xc233/Documents/GitHub/Hackintosh-Lenovo-chao5000/ACPI/patched/SSDT-PCIS.aml, Fri Mar 22 13:28:26 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000448 (1096)
+ *     Length           0x000003CE (974)
  *     Revision         0x02
- *     Checksum         0x14
+ *     Checksum         0xAC
  *     OEM ID           "PCIS"
  *     OEM Table ID     "PCIS"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
+ *     Compiler Version 0x20190215 (538509845)
  */
 DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
 {
+    External (_SB_.PCI0.GFX0, DeviceObj)
+    External (_SB_.PCI0.I2C0, DeviceObj)
+    External (_SB_.PCI0.RP05, DeviceObj)
+    External (_SB_.PCI0.SATA, DeviceObj)
+    External (_SB_.PCI0.XHC_, DeviceObj)
+
     Method (_SB.PCI0.SATA._DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
     {
         If ((Arg2 == Zero))
         {
             Return (Buffer (One)
             {
-                 0x03                                           
+                 0x03                                             // .
             })
         }
 
@@ -58,7 +64,7 @@ DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
         {
             Return (Buffer (One)
             {
-                 0x03                                           
+                 0x03                                             // .
             })
         }
 
@@ -90,7 +96,7 @@ DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
         {
             Return (Buffer (One)
             {
-                 0x03                                           
+                 0x03                                             // .
             })
         }
 
@@ -128,7 +134,7 @@ DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
         {
             Return (Buffer (One)
             {
-                 0x03                                           
+                 0x03                                             // .
             })
         }
 
@@ -160,7 +166,7 @@ DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
         {
             Return (Buffer (One)
             {
-                 0x03                                           
+                 0x03                                             // .
             })
         }
 
@@ -183,53 +189,6 @@ DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
             {
                 "Realtek RTL8168GU/8111GU PCI Express Gigabit Ethernet"
             }
-        })
-    }
-
-    Method (_SB.PCI0.HDAS._DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
-    {
-        If ((Arg2 == Zero))
-        {
-            Return (Buffer (One)
-            {
-                 0x03                                           
-            })
-        }
-
-        Return (Package (0x0C)
-        {
-            "layout-id", 
-            Buffer (0x04)
-            {
-                 0x14, 0x00, 0x00, 0x00                         
-            }, 
-
-            "hda-gfx", 
-            Buffer (0x0A)
-            {
-                "onboard-1"
-            }, 
-
-            "AAPL,slot-name", 
-            Buffer (0x09)
-            {
-                "Built in"
-            }, 
-
-            "name", 
-            Buffer (0x0F)
-            {
-                "Realtek ALC230"
-            }, 
-
-            "model", 
-            Buffer (0x32)
-            {
-                "Realtek ALC230 @ High Definition Audio Controller"
-            }, 
-
-            "PinConfigurations", 
-            Buffer (Zero){}
         })
     }
 }
