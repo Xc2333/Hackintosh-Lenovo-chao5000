@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of /Users/Xc233/Documents/GitHub/Hackintosh-Lenovo-chao5000/ACPI/patched/SSDT-PCIS.aml, Fri Mar 22 13:28:26 2019
+ * Disassembly of /Volumes/ESP_MAC/EFI/CLOVER/ACPI/patched/SSDT-PCIS.aml, Fri Mar 22 13:36:18 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000003CE (974)
+ *     Length           0x00000445 (1093)
  *     Revision         0x02
- *     Checksum         0xAC
+ *     Checksum         0x3B
  *     OEM ID           "PCIS"
  *     OEM Table ID     "PCIS"
  *     OEM Revision     0x00000000 (0)
@@ -21,6 +21,7 @@
 DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
 {
     External (_SB_.PCI0.GFX0, DeviceObj)
+    External (_SB_.PCI0.HDAS, DeviceObj)
     External (_SB_.PCI0.I2C0, DeviceObj)
     External (_SB_.PCI0.RP05, DeviceObj)
     External (_SB_.PCI0.SATA, DeviceObj)
@@ -189,6 +190,35 @@ DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
             {
                 "Realtek RTL8168GU/8111GU PCI Express Gigabit Ethernet"
             }
+        })
+    }
+
+    Method (_SB.PCI0.HDAS._DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+    {
+        If ((Arg2 == Zero))
+        {
+            Return (Buffer (One)
+            {
+                 0x03                                             // .
+            })
+        }
+
+        Return (Package (0x06)
+        {
+            "layout-id", 
+            Buffer (0x04)
+            {
+                 0x14, 0x00, 0x00, 0x00                           // ....
+            }, 
+
+            "hda-gfx", 
+            Buffer (0x0A)
+            {
+                "onboard-1"
+            }, 
+
+            "PinConfigurations", 
+            Buffer (Zero){}
         })
     }
 }
