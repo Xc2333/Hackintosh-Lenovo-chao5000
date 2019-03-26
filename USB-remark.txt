@@ -1,0 +1,7 @@
+HS01 left up 3.0
+HS02 type-C(SW) 9
+HS03 left down 3.0 
+HS07 bluetooth 255
+HS08 EasyCamera 255
+SS03 left down 3.0
+SS01 left up 3.0
