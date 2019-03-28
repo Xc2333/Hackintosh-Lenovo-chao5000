@@ -6,6 +6,23 @@
   *****
   
 ####   更新日志:
+> 3/28/2019
+
+1.ig-platform-id更换为19160000，SMBIOS更换为MacBook Pro13.3。
+
+2.HDMI端口@1类型已修正，音视频输出正常。
+
+3.去掉DVMT补丁（解锁BIOS后设置为64M，如果你没有设置为64M，则使用config-DVMT.plist）默认config不使用DVMT补丁。
+
+4.CLOVER更新为4910，以适应macOS 10.14.4更新。
+
+5.简化SSDT-TPD0.aml, SYNA2B33只需要一个bin patch即可，0608还需测试。
+
+6.更新SSDT-CPFD.aml为MacBook Pro 13.3。
+
+7.SystemFixTools.kext内添加EFICheckDisabler.kext以解决开机提示潜在错误。
+
+
 > 3/21/2019
 
 1.优化SSDT-XOSI.aml。

@@ -166,12 +166,41 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 keepsyms=1 -v</string>
+		<string>dart=0 keepsyms=1 lilucpu=8</string>
 		<key>NeverDoRecovery</key>
 		<true/>
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0)/Pci(0x02,0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAAWGQ==</data>
+				<key>device-id</key>
+				<data>FhkAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+			</dict>
+			<key>PciRoot(0)/Pci(0x1f,3)</key>
+			<dict>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
+				<integer>20</integer>
+			</dict>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -198,18 +227,6 @@
 		<false/>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
-	</dict>
-	<key>Graphics</key>
-	<dict>
-		<key>Inject</key>
-		<dict>
-			<key>ATI</key>
-			<false/>
-			<key>Intel</key>
-			<true/>
-		</dict>
-		<key>ig-platform-id</key>
-		<string>0x12345678</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -273,7 +290,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02648301QXHCF9FB</string>
+		<string>C02710700GUHCF98C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -303,9 +320,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro13,3</string>
 		<key>SerialNumber</key>
-		<string>C02SR0PNGTFN</string>
+		<string>C02TDMYNGTFN</string>
 		<key>SmUUID</key>
-		<string>90D8583C-D3EE-4583-8432-C440A9B98CDC</string>
+		<string>FD141ED7-4E73-4FF9-BC41-2F677A410AB5</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
