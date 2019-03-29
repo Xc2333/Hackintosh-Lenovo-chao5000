@@ -7,6 +7,9 @@
 #  
 
 
+# SMBIOS已更换为MacbookPro 13.3
+# 从10.14开始，Apple取消了com.apple.SystemProfiler.plist，故此脚本弃用
+
 
 smbios="$(sysctl -n hw.model)"
 PlistBuddy=/usr/libexec/PlistBuddy
