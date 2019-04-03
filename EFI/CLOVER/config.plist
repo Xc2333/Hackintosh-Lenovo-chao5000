@@ -29,9 +29,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>hFNCRlNTQkZJAA==</data>
+					<data>
+					hFNCRlNTQkZJAA==
+					</data>
 					<key>Replace</key>
-					<data>hFNCRlNTQkZHAA==</data>
+					<data>
+					hFNCRlNTQkZHAA==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -39,9 +43,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>U0FUMA==</data>
+					<data>
+					U0FUMA==
+					</data>
 					<key>Replace</key>
-					<data>U0FUQQ==</data>
+					<data>
+					U0FUQQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -49,9 +57,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>RUMwXw==</data>
+					<data>
+					RUMwXw==
+					</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>
+					RUNfXw==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -59,9 +71,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X09TSQ==</data>
+					<data>
+					X09TSQ==
+					</data>
 					<key>Replace</key>
-					<data>WE9TSQ==</data>
+					<data>
+					WE9TSQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -69,9 +85,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1ExMQ==</data>
+					<data>
+					X1ExMQ==
+					</data>
 					<key>Replace</key>
-					<data>WFExMQ==</data>
+					<data>
+					WFExMQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -79,9 +99,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1ExMg==</data>
+					<data>
+					X1ExMg==
+					</data>
 					<key>Replace</key>
-					<data>WFExMg==</data>
+					<data>
+					WFExMg==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -89,9 +113,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>R1BSVwI=</data>
+					<data>
+					R1BSVwI=
+					</data>
 					<key>Replace</key>
-					<data>WFBSVwI=</data>
+					<data>
+					WFBSVwI=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -99,9 +127,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X0JJRg==</data>
+					<data>
+					X0JJRg==
+					</data>
 					<key>Replace</key>
-					<data>WEJJRg==</data>
+					<data>
+					WEJJRg==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -109,9 +141,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>UEJJRg==</data>
+					<data>
+					UEJJRg==
+					</data>
 					<key>Replace</key>
-					<data>UEJJWA==</data>
+					<data>
+					UEJJWA==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -119,11 +155,17 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X0NSUw==</data>
+					<data>
+					X0NSUw==
+					</data>
 					<key>Replace</key>
-					<data>WENSUw==</data>
+					<data>
+					WENSUw==
+					</data>
 					<key>TgtBridge</key>
-					<data>VFBEMA==</data>
+					<data>
+					VFBEMA==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -131,11 +173,17 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1NUQQ==</data>
+					<data>
+					X1NUQQ==
+					</data>
 					<key>Replace</key>
-					<data>WFNUQQ==</data>
+					<data>
+					WFNUQQ==
+					</data>
 					<key>TgtBridge</key>
-					<data>R1BJMA==</data>
+					<data>
+					R1BJMA==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -143,9 +191,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X0RTTQ==</data>
+					<data>
+					X0RTTQ==
+					</data>
 					<key>Replace</key>
-					<data>WERTTQ==</data>
+					<data>
+					WERTTQ==
+					</data>
 				</dict>
 			</array>
 		</dict>
@@ -176,22 +228,34 @@
 		<dict>
 			<key>PciRoot(0)/Pci(0x02,0)</key>
 			<dict>
-				<key>framebuffer-con2-index</key>
-				<data>/////w==</data>
-				<key>framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-portcount</key>
-				<data>AgAAAA==</data>
-				<key>framebuffer-pipecount</key>
-				<data>AgAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAWGQ==</data>
+				<data>
+				AAAWGQ==
+				</data>
 				<key>device-id</key>
-				<data>FhkAAA==</data>
+				<data>
+				FhkAAA==
+				</data>
 				<key>framebuffer-con1-enable</key>
 				<integer>1</integer>
 				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
+				</data>
+				<key>framebuffer-pipecount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 			</dict>
@@ -233,11 +297,11 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>KernelLapic</key>
-		<true/>
+		<false/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KextsToPatch</key>
@@ -248,13 +312,17 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>SU9LaXQ=</data>
+				<data>
+				SU9LaXQ=
+				</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelLpssI2C</string>
 				<key>Replace</key>
-				<data>SU9LaXM=</data>
+				<data>
+				SU9LaXM=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -262,13 +330,17 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>SU9LaXQ=</data>
+				<data>
+				SU9LaXQ=
+				</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelLpssI2CController</string>
 				<key>Replace</key>
-				<data>SU9LaXM=</data>
+				<data>
+				SU9LaXM=
+				</data>
 			</dict>
 		</array>
 	</dict>

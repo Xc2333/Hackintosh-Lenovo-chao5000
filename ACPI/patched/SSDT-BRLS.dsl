@@ -53,15 +53,17 @@ DefinitionBlock ("", "SSDT", 2, "BRlS", "BRLS", 0x00000000)
             Name (_UID, 0x0A)  // _UID: Unique ID
             Name (_STA, 0x0B)  // _STA: Status
         }
+        
+        Device (ALS0)
+        {
+            Debug = "Inject a fake ALS device (ambient light sensor"
+            Name (_HID, "ACPI0008")  // _HID: Hardware ID
+            Name (_CID, "smc-als")  // _CID: Compatible ID
+            Name (_ALI, 0x012C)  // _ALI: Ambient Light Illuminance
+            Name (_ALR, Package (0x00){})  // _ALR: Ambient Light Response
+        }
+
     }
 
-    Device (_SB.ALS0)
-    {
-        Debug = "Inject a fake ALS device (ambient light sensor"
-        Name (_HID, "ACPI0008")  // _HID: Hardware ID
-        Name (_CID, "smc-als")  // _CID: Compatible ID
-        Name (_ALI, 0x012C)  // _ALI: Ambient Light Illuminance
-        Name (_ALR, Package (0x00){})  // _ALR: Ambient Light Response
-    }
-}
+   }
 
