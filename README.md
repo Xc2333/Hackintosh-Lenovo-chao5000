@@ -7,7 +7,7 @@
   
 ####   更新日志:
 
-> 3/28/2019
+> 4/14/2019
 
 1.Clover更新为4919，VoodooPS2.kext更新为2.0.0，WhateverGreen.kext更新为1.2.8，ApfsDriverLoader/AptioMemory已更新为最新。
 
