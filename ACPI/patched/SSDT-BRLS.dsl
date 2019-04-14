@@ -1,28 +1,28 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
+ * AML/ASL+ Disassembler version 20181003 (64-bit version)
  * Copyright (c) 2000 - 2018 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-BRLS.aml, Fri Feb  1 16:17:44 2019
+ * Disassembly of SSDT-BRLS.aml, Sun Apr 14 20:00:54 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x0000016E (366)
+ *     Length           0x0000016A (362)
  *     Revision         0x02
- *     Checksum         0xFE
+ *     Checksum         0x8D
  *     OEM ID           "BRlS"
  *     OEM Table ID     "BRLS"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
+ *     Compiler Version 0x20181003 (538447875)
  */
 DefinitionBlock ("", "SSDT", 2, "BRlS", "BRLS", 0x00000000)
 {
-    External (_SB_.PCI0.LPCB, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.EC__, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.PS2K, DeviceObj)    // (from opcode)
+    External (_SB_.PCI0.LPCB, DeviceObj)
+    External (_SB_.PCI0.LPCB.EC__, DeviceObj)
+    External (_SB_.PCI0.LPCB.PS2K, DeviceObj)
 
     Scope (_SB.PCI0.LPCB)
     {
@@ -53,17 +53,15 @@ DefinitionBlock ("", "SSDT", 2, "BRlS", "BRLS", 0x00000000)
             Name (_UID, 0x0A)  // _UID: Unique ID
             Name (_STA, 0x0B)  // _STA: Status
         }
-        
+
         Device (ALS0)
         {
             Debug = "Inject a fake ALS device (ambient light sensor"
-            Name (_HID, "ACPI0008")  // _HID: Hardware ID
+            Name (_HID, "ACPI0008" /* Ambient Light Sensor Device */)  // _HID: Hardware ID
             Name (_CID, "smc-als")  // _CID: Compatible ID
             Name (_ALI, 0x012C)  // _ALI: Ambient Light Illuminance
             Name (_ALR, Package (0x00){})  // _ALR: Ambient Light Response
         }
-
     }
-
-   }
+}
 

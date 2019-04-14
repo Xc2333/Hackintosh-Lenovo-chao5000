@@ -18,39 +18,13 @@
 				<true/>
 				<key>FixRTC</key>
 				<true/>
+				<key>FixRegions</key>
+				<true/>
 				<key>FixTMR</key>
 				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
-				<dict>
-					<key>Comment</key>
-					<string>change_SBFI to SBFG-2B33</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					hFNCRlNTQkZJAA==
-					</data>
-					<key>Replace</key>
-					<data>
-					hFNCRlNTQkZHAA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
-				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change EC0 to EC</string>
@@ -105,20 +79,6 @@
 					<key>Replace</key>
 					<data>
 					WFExMg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GPRW to XPRW</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R1BSVwI=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFBSVwI=
 					</data>
 				</dict>
 				<dict>
@@ -298,12 +258,10 @@
 	<dict>
 		<key>AppleIntelCPUPM</key>
 		<false/>
-		<key>AppleRTC</key>
-		<true/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>

@@ -1,11 +1,11 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
+ * AML/ASL+ Disassembler version 20181003 (64-bit version)
  * Copyright (c) 2000 - 2018 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-BIMY.aml, Fri Feb  1 16:17:44 2019
+ * Disassembly of SSDT-BIMY.aml, Sun Apr 14 20:00:54 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
@@ -20,18 +20,18 @@
  */
 DefinitionBlock ("", "SSDT", 2, "BIMY", "BIMY", 0x00000000)
 {
-    External (_SB_.PCI0.LPCB.EC__, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.EC__.B1DC, FieldUnitObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.EC__.B1DV, FieldUnitObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.EC__.B1FC, FieldUnitObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.EC__.BAT0, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.EC__.BAT0.PBIF, PkgObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.EC__.ECAV, IntObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.EC__.LFCM, MutexObj)    // (from opcode)
-    External (B1DC, IntObj)    // (from opcode)
-    External (B1DV, IntObj)    // (from opcode)
-    External (B1FC, IntObj)    // (from opcode)
-    External (PBIF, IntObj)    // (from opcode)
+    External (_SB_.PCI0.LPCB.EC__, DeviceObj)
+    External (_SB_.PCI0.LPCB.EC__.B1DC, FieldUnitObj)
+    External (_SB_.PCI0.LPCB.EC__.B1DV, FieldUnitObj)
+    External (_SB_.PCI0.LPCB.EC__.B1FC, FieldUnitObj)
+    External (_SB_.PCI0.LPCB.EC__.BAT0, DeviceObj)
+    External (_SB_.PCI0.LPCB.EC__.BAT0.PBIF, PkgObj)
+    External (_SB_.PCI0.LPCB.EC__.ECAV, IntObj)
+    External (_SB_.PCI0.LPCB.EC__.LFCM, MutexObj)
+    External (B1DC, IntObj)
+    External (B1DV, IntObj)
+    External (B1FC, IntObj)
+    External (PBIF, IntObj)
 
     Method (_SB.PCI0.LPCB.EC.BAT0._BIF, 0, NotSerialized)  // _BIF: Battery Information
     {
@@ -40,13 +40,13 @@ DefinitionBlock ("", "SSDT", 2, "BIMY", "BIMY", 0x00000000)
         {
             If ((Acquire (LFCM, 0xA000) == Zero))
             {
-                Local0 = B1DC
+                Local0 = B1DC /* External reference */
                 Local0 *= 0x0A
                 PBIF [One] = Local0
-                Local0 = B1FC
+                Local0 = B1FC /* External reference */
                 Local0 *= 0x0A
                 PBIF [0x02] = Local0
-                PBIF [0x04] = B1DV
+                PBIF [0x04] = B1DV /* External reference */
                 If (B1FC)
                 {
                     PBIF [0x05] = ((B1FC * 0x0A) / 0x0A)
@@ -62,7 +62,7 @@ DefinitionBlock ("", "SSDT", 2, "BIMY", "BIMY", 0x00000000)
             }
         }
 
-        Return (PBIF)
+        Return (PBIF) /* \_SB_.PCI0.LPCB.EC__.BAT0.PBIF */
     }
 
     Name (_SB.PCI0.LPCB.EC.BAT0.PBIF, Package (0x0E)

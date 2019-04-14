@@ -5,7 +5,7 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of /Users/Xc233/Documents/GitHub/Hackintosh-Lenovo-chao5000/ACPI/patched/SSDT-XOSI.aml, Thu Mar 21 20:43:20 2019
+ * Disassembly of SSDT-XOSI.aml, Sun Apr 14 20:00:54 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"

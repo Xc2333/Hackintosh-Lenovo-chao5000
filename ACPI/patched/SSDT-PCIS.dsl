@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of /Volumes/ESP_MAC/EFI/CLOVER/ACPI/patched/SSDT-PCIS.aml, Fri Mar 22 13:36:18 2019
+ * Disassembly of SSDT-PCIS.aml, Sun Apr 14 20:00:54 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000445 (1093)
+ *     Length           0x000003CE (974)
  *     Revision         0x02
- *     Checksum         0x3B
+ *     Checksum         0xAC
  *     OEM ID           "PCIS"
  *     OEM Table ID     "PCIS"
  *     OEM Revision     0x00000000 (0)
@@ -191,6 +191,5 @@ DefinitionBlock ("", "SSDT", 2, "PCIS", "PCIS", 0x00000000)
             }
         })
     }
-
-    }
+}
 

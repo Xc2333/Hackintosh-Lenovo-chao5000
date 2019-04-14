@@ -6,6 +6,16 @@
   *****
   
 ####   更新日志:
+
+> 3/28/2019
+
+1.Clover更新为4919，VoodooPS2.kext更新为2.0.0，WhateverGreen.kext更新为1.2.8，ApfsDriverLoader/AptioMemory已更新为最新。
+
+2.SSDT-TPD0.aml修复；抛弃SSDT-GPRW.aml，新的SSDT-DAMD.aml。
+
+3.config添加FixRegions；移除SAT0重命名；移除SSDT-CPFD.aml，不再设置最低频率。
+
+  
 > 3/28/2019
 
 1.ig-platform-id更换为19160000，SMBIOS更换为MacBook Pro13.3。

@@ -5,22 +5,23 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of /Users/Xc233/Documents/GitHub/Hackintosh-Lenovo-chao5000/EFI/CLOVER/ACPI/patched/SSDT-TPD0.aml, Thu Mar 28 17:26:04 2019
+ * Disassembly of SSDT-TPD0.aml, Sun Apr 14 20:00:54 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000103 (259)
+ *     Length           0x00000131 (305)
  *     Revision         0x02
- *     Checksum         0x15
+ *     Checksum         0x6E
  *     OEM ID           "TPD"
  *     OEM Table ID     "TPD"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20190215 (538509845)
+ *     Compiler Version 0x20190329 (538510121)
  */
 DefinitionBlock ("", "SSDT", 2, "TPD", "TPD", 0x00000000)
 {
     External (_SB_.PCI0.I2C0.TPD0.SBFG, IntObj)
+    External (_SB_.PCI0.I2C0.TPD0.SBFS, IntObj)
     External (TPTY, FieldUnitObj)
 
     Debug = "Enable touchpad work with VoodooI2C.kext"
@@ -45,6 +46,11 @@ DefinitionBlock ("", "SSDT", 2, "TPD", "TPD", 0x00000000)
                     }
             })
             Return (ConcatenateResTemplate (SBFB, SBFG))
+        }
+
+        If ((TPTY == 0x02))
+        {
+            Return (ConcatenateResTemplate (SBFS, SBFG))
         }
     }
 }

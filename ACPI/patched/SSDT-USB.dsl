@@ -1,11 +1,11 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
+ * AML/ASL+ Disassembler version 20181003 (64-bit version)
  * Copyright (c) 2000 - 2018 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of /Users/xc233/Documents/GitHub/Hackintosh-Lenovo-chao5000/ACPI/patched/SSDT-USB.aml, Mon Feb 18 20:17:44 2019
+ * Disassembly of SSDT-USB.aml, Sun Apr 14 20:00:54 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
@@ -32,7 +32,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                 "port-count", 
                 Buffer (0x04)
                 {
-                     0x12, 0x00, 0x00, 0x00                         
+                     0x12, 0x00, 0x00, 0x00                           // ....
                 }, 
 
                 "ports", 
@@ -46,7 +46,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         "port", 
                         Buffer (0x04)
                         {
-                             0x01, 0x00, 0x00, 0x00                         
+                             0x01, 0x00, 0x00, 0x00                           // ....
                         }
                     }, 
 
@@ -58,7 +58,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         "port", 
                         Buffer (0x04)
                         {
-                             0x02, 0x00, 0x00, 0x00                         
+                             0x02, 0x00, 0x00, 0x00                           // ....
                         }
                     }, 
 
@@ -70,7 +70,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         "port", 
                         Buffer (0x04)
                         {
-                             0x03, 0x00, 0x00, 0x00                         
+                             0x03, 0x00, 0x00, 0x00                           // ....
                         }
                     }, 
 
@@ -82,7 +82,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         "port", 
                         Buffer (0x04)
                         {
-                             0x07, 0x00, 0x00, 0x00                         
+                             0x07, 0x00, 0x00, 0x00                           // ....
                         }
                     }, 
 
@@ -94,7 +94,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         "port", 
                         Buffer (0x04)
                         {
-                             0x08, 0x00, 0x00, 0x00                         
+                             0x08, 0x00, 0x00, 0x00                           // ....
                         }
                     }, 
 
@@ -106,7 +106,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         "port", 
                         Buffer (0x04)
                         {
-                             0x0D, 0x00, 0x00, 0x00                         
+                             0x0D, 0x00, 0x00, 0x00                           // ....
                         }
                     }, 
 
@@ -118,7 +118,7 @@ DefinitionBlock ("", "SSDT", 2, "USB", "USB", 0x00000000)
                         "port", 
                         Buffer (0x04)
                         {
-                             0x0F, 0x00, 0x00, 0x00                         
+                             0x0F, 0x00, 0x00, 0x00                           // ....
                         }
                     }
                 }

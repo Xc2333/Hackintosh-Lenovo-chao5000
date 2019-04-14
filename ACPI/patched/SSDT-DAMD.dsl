@@ -5,62 +5,30 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of /Volumes/ESP_MAC/EFI/CLOVER/ACPI/patched/SSDT-DAMD.aml, Thu Mar 28 18:49:52 2019
+ * Disassembly of SSDT-DAMD.aml, Sun Apr 14 20:00:54 2019
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000000E9 (233)
+ *     Length           0x0000006C (108)
  *     Revision         0x02
- *     Checksum         0xFB
+ *     Checksum         0xDD
  *     OEM ID           "DAMD"
  *     OEM Table ID     "DAMD"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20190215 (538509845)
+ *     Compiler Version 0x20190329 (538510121)
  */
 DefinitionBlock ("", "SSDT", 2, "DAMD", "DAMD", 0x00000000)
 {
-    External (_SB_.PCI0.RP01.PXSX, DeviceObj)
+    External (_SB_.PCI0.RP01.PXSX._OFF, MethodObj)    // 0 Arguments
 
-    Method (\_SB.PCI0.RP01.PXSX._DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+    Device (XCCF)
     {
-        Debug = "Disable the AMD graphics device"
-        If (!Arg2)
+        Name (_ADR, Zero)  // _ADR: Address
+        Method (_INI, 0, NotSerialized)  // _INI: Initialize
         {
-            Return (Buffer (One)
-            {
-                 0x03                                             // .
-            })
+            \_SB.PCI0.RP01.PXSX._OFF ()
         }
-
-        Return (Package (0x0A)
-        {
-            "name", 
-            Buffer (0x09)
-            {
-                "#display"
-            }, 
-
-            "IOName", 
-            "#display", 
-            "class-code", 
-            Buffer (0x04)
-            {
-                 0xFF, 0xFF, 0xFF, 0xFF                           // ....
-            }, 
-
-            "vendor-id", 
-            Buffer (0x04)
-            {
-                 0xFF, 0xFF, 0x00, 0x00                           // ....
-            }, 
-
-            "device-id", 
-            Buffer (0x04)
-            {
-                 0xFF, 0xFF, 0x00, 0x00                           // ....
-            }
-        })
     }
 }
 
